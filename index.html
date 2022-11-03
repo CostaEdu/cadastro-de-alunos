@@ -1,0 +1,63 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de cadastro de alunos</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div id="main-container">
+        <h1>Cadastre o aluno</h1>
+        <form id="register-form"> 
+            <!-- Nome do aluno -->
+            <div class="full-box">
+                <label >Nome</label>
+                <input type="text" id="name" placeholder="Digite o seu nome">
+            </div>
+            <!-- Sobrenome do aluno -->
+            <div class="full-box">
+                <label for="sobrenome">Sobrenome</label>
+                <input type="text" name="lastname" id="lastname" placeholder="Digite o seu sobrenome">
+            </div>
+            <!-- E-mail do aluno -->
+            <div class="full-box">
+                <label for="e-mail">E-mail</label>
+                <input type="email" name="email" id="email" placeholder="Digite o seu e-mail">
+            </div>
+            <!-- Turma do aluno -->
+            <div class="full-box">
+                <label for="turma">Turma</label>
+                <input type="text" name="turma" id="turma" placeholder="Digite a sua turma">
+            </div>
+            <!-- Senha do aluno -->
+            <div class="half-box">
+                <label for="senha">Senha</label>
+                <input type="password" name="password" id="password" placeholder="Digite a sua senha">
+            </div>
+            <!-- Confirmação da senha -->
+            <div class="half-box">
+                <label for="passconfirmation">Confirmação da Senha</label>
+                <input type="password" name="passconfirmation" id="passconfirmation" placeholder="Confirme a sua senha">
+            </div>
+            <!-- Aceitar os termos de uso -->
+            <div class="full-box">
+                <input type="checkbox" name="agreement" id="agreement">
+                <label for="agreement" id="agreement-label">Eu li e aceito os <a href="#">termos de uso </a></label>
+            </div>
+            <!-- Enviar o Formulário -->
+            <div class="full-box">
+                <button id="btn-submit">Registrar</button>
+            </div>
+        </form>
+    </div>
+    <p class="error-validation template"></p>
+    <script src="index.js"></script>
+</body>
+</html>
+
+<!-- Nome do Aluno
+Sobrenome do Aluno
+Email do Aluno
+Turma do Aluno
+Senha -->
